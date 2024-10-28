@@ -1,0 +1,219 @@
+/* Estilos para el formulario de inicio y registro */
+body {
+    font-family: Arial, sans-serif;
+    /*background-color: #f4f4f4;*/
+    background-image: url('backgrounds/fondo1.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño del navegador */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija el fondo para que no se mueva al hacer scroll */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que el contenido ocupe todo el alto de la ventana */
+    margin: 0; /* Elimina los márgenes del cuerpo */  
+}
+
+.login-container, .register-container {
+    background-color: rgba(255, 255, 255, 0.452);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+h2 {
+    text-align: center;
+    color:#ae7ddb;
+    font-family: monospace;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #ffb9ea;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #ffb9ea;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.avatar-preview {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilos generales */
+.dashboard-main, .create-character-container, .characters-list-container, .character-details-container, .leaderboard-container, .dashboard-container {
+    background-color: rgba(255, 255, 255, 0.315);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.character-details-container img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #ffb9ea;
+    color: rgba(255, 255, 255, 0.966);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ffb9ea;
+}
+
+form {
+    /*display: inline-block;*/
+    margin: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.164);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el contenedor de la tabla de clasificaciones */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #ffb9ea;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f45d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos del contenedor principal */
+.dashboard-container {
+    width: 80%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Estilos de las fichas */
+.card {
+    width: 400px;
+    background-color: #0000008e;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin: 10px 0;
+    color:#b085d8;
+}
+
+.card p {
+    color: #ffffff;
+}
+
+/* Botón en cada ficha */
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffb9ea;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #ffb9ea;
+}
+
+/* Ajustes para dispositivos pequeños */
+@media (max-width: 600px) {
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
